@@ -38,15 +38,15 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="cubic_from" class="form-label fw-bold">From ( m³ )</label>
-                                            <input type="number" class="form-control @error('cubic_from') is-invalid @enderror" id="cubic_from" name="cubic_from" value="{{ old('cubic_from', $data->cubic_from ?? '') }}" placeholder="Enter starting cubic meter">
+                                            <label for="cubic_from" class="form-label fw-bold">From ( kWh )</label>
+                                            <input type="number" class="form-control @error('cubic_from') is-invalid @enderror" id="cubic_from" name="cubic_from" value="{{ old('cubic_from', $data->cubic_from ?? '') }}" placeholder="Enter starting kilowatt">
                                             @error('cubic_from')
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="cubic_to" class="form-label fw-bold">To ( m³ )</label>
-                                            <input type="number" class="form-control @error('cubic_to') is-invalid @enderror" id="cubic_to" name="cubic_to" value="{{ old('cubic_to', $data->cubic_to ?? '') }}" placeholder="Enter ending cubic meter">
+                                            <label for="cubic_to" class="form-label fw-bold">To ( kWh )</label>
+                                            <input type="number" class="form-control @error('cubic_to') is-invalid @enderror" id="cubic_to" name="cubic_to" value="{{ old('cubic_to', $data->cubic_to ?? '') }}" placeholder="Enter ending kilowatt">
                                             @error('cubic_to')
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
@@ -69,13 +69,13 @@
                     <div class="col-md-6 col-sm-12 col-lg-7">
                         <div class="card shadow">
                             <div class="card-header border-0 m-0 pt-3">
-                                <h6 class="card-title mb-0 text-uppercase fw-bold">Water Rates</h6>
+                                <h6 class="card-title mb-0 text-uppercase fw-bold">{{ $app_type }} Rates</h6>
                             </div>
                             <div class="card-body">
                                 <table class="table table-bordered text-center">
                                     <thead class="table-dark">
                                         <tr>
-                                            <th>Cu / M</th>
+                                            <th>Kwh</th>
                                             <th>COMM Charge</th>
                                             <th>AMOUNT</th>
                                         </tr>

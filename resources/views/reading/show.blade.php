@@ -80,24 +80,24 @@
                             </div>
                         @endif
                         @php
-                            $logoPath = public_path('images/client.png');
+                            $logoPath = public_path('images/novusurgelogo.png');
 
                             $base64 = 'data:image/png;base64,' . base64_encode(file_get_contents($logoPath));
                         @endphp
 
                         <div style="text-align: center; margin-top: 18px; margin-bottom: 10px; padding-bottom: 10px; display: flex; justify-content: center; align-items: center; gap: 15px;">
                             <div>
-                                <img src="{{ asset('images/client.png')}}"
+                                <img src="{{ asset('images/novusurgelogo.png')}}"
                                     alt="logo" class="web-logo">
                                 <img src="{{ $base64 }}" alt="logo" class="print-logo">
                             </div>
                             <div style="width: fit-content;">
                                 <p style="font-size: 11px; text-transform: uppercase; margin: 0; font-weight: 600">Republic of the Philippines</p>
-                                <p style="font-size: 15px; text-transform: uppercase; margin: 0; text-transform: uppercase; font-weight: 600">Sta. Rita Water District</p>
-                                <p style="font-size: 12px; text-transform: uppercase; margin: 3px 0 0 0;">Zone 6 Dila-Dila, Santa Rita, Pampanga</p>
-                                <p style="font-size: 12px; text-transform: uppercase; margin: 0;">Facebook Page: Sta. Rita Water District</p>
-                                <p style="font-size: 12px; text-transform: uppercase; margin: 0;">Cell No. 0917-103-2421 | 0917-104-7196</p>
-                                <p style="font-size: 12px; text-transform: uppercase; margin: 0;">TIN 261-304-832-000 Non VAT</p>
+                                <p style="font-size: 15px; text-transform: uppercase; margin: 0; text-transform: uppercase; font-weight: 600">Demo Power Utility</p>
+                                <p style="font-size: 12px; text-transform: uppercase; margin: 3px 0 0 0;">Demo Address, Demo City, Philippines</p>
+                                <p style="font-size: 12px; text-transform: uppercase; margin: 0;">Email: demo@example.com</p>
+                                <p style="font-size: 12px; text-transform: uppercase; margin: 0;">Tel: (02) 8888-0000</p>
+                                <p style="font-size: 12px; text-transform: uppercase; margin: 0;">TIN 111-222-333-000 Non VAT</p>
                             </div>
                         </div>
                         <div style="text-align:center; text-transform: uppercase; font-size: 16px; margin: 10px 0 10px 0;">
@@ -162,7 +162,7 @@
                                 <div style="text-transform: uppercase">{{$data['current_bill']['reading']['present_reading'] ?? '0'}}</div>
                             </div>
                             <div class="oversized" style="display: flex; justify-content: space-between; margin-top: 5px">
-                                <div style="font-size: 20px; font-weight: 800; text-transform: uppercase">Cub. M Used</div>
+                                <div style="font-size: 20px; font-weight: 800; text-transform: uppercase">kWh Used</div>
                                 <div style="font-size: 20px; font-weight: 800; text-transform: uppercase">{{$data['current_bill']['reading']['consumption'] ?? '0'}}</div>
                             </div>
                         </div>
