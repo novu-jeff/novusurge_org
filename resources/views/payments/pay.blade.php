@@ -59,7 +59,7 @@
                                         </div>
                                         <div style="width: fit-content;">
                                             <p style="font-size: 11px; text-transform: uppercase; margin: 0; font-weight: 600">Republic of the Philippines</p>
-                                            <p style="font-size: 15px; text-transform: uppercase; margin: 0; text-transform: uppercase; font-weight: 600">Demo Water District</p>
+                                            <p style="font-size: 15px; text-transform: uppercase; margin: 0; text-transform: uppercase; font-weight: 600">Demo Power Utility</p>
                                             <p style="font-size: 12px; text-transform: uppercase; margin: 3px 0 0 0;">Demo Address, Demo City, Philippines</p>
                                             <p style="font-size: 12px; text-transform: uppercase; margin: 0;">Email: demo@example.com</p>
                                             <p style="font-size: 12px; text-transform: uppercase; margin: 0;">Tel: (02) 8888-0000</p>
