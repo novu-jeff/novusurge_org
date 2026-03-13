@@ -100,7 +100,7 @@
                                 <td>{{ $row->concessionaire->user->name ?? 'N/A' }}</td>
                                 <td>{{ $row->previous_reading }}</td>
                                 <td>{{ $row->present_reading }}</td>
-                                <td>{{ $row->consumption }} m³</td>
+                                <td>{{ $row->consumption }} kWh</td>
                                 <td>{{ \Carbon\Carbon::parse($row->created_at)->format('F d, Y') }}</td>
                                 <td>
                                     <div class="d-flex align-items-center gap-2">
@@ -199,7 +199,7 @@ $(function () {
                         <td>${row.concessionaire?.user?.name ?? 'N/A'}</td>
                         <td>${row.previous_reading}</td>
                         <td>${row.present_reading}</td>
-                        <td>${row.consumption} m³</td>
+                        <td>${row.consumption} kWh</td>
                         <td>${new Date(row.created_at).toLocaleDateString('en-US', { month:'long', day:'numeric', year:'numeric' })}</td>
                         <td>
                             <div class="d-flex align-items-center gap-2">
